@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'connexion',
     loadChildren: () => import('./connexion/connexion.module').then( m => m.ConnexionPageModule)
+  },
+  {
+    path: 'profil-utilisateur',
+    loadChildren: () => import('./profil-utilisateur/profil-utilisateur.module').then( m => m.ProfilUtilisateurPageModule)
   }
 ];
 
