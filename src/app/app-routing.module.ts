@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'profil-utilisateur',
     loadChildren: () => import('./profil-utilisateur/profil-utilisateur.module').then( m => m.ProfilUtilisateurPageModule)
+  },
+  {
+    path: 'vue-utilisateur',
+    loadChildren: () => import('./vue-utilisateur/vue-utilisateur.module').then( m => m.VueUtilisateurPageModule)
   }
 ];
 
